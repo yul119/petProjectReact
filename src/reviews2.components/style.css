@@ -3,40 +3,25 @@
   height: 100%;
   margin-left: 20%;
 }
-
 .containers .header {
   width: 100%;
   height: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 40px 0;
 }
-
 .containers .header h1 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 .containers .header h1 span {
   color: #1eb7dd;
 }
-
 .containers .body {
   width: 100%;
-  height: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 360px;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .containers .body .reviews {
   width: 70%;
   height: 360px;
@@ -44,13 +29,16 @@
   margin-right: auto;
   margin-bottom: 50px;
   padding: 30px;
-  position: absolute;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  opacity: 0;
+  display: flex;
+  justify-content: center;
 }
-
-.containers .body .reviews .image {
+.containers .body .reviews .a {
+  width: 50%;
+  height: 360px;
+  position: absolute;
+  transition: all 0.5s linear;
+}
+.containers .body .reviews .a .image {
   border-radius: 50%;
   height: 150px;
   width: 150px;
@@ -59,76 +47,63 @@
   margin: 0 auto;
   margin-bottom: 1.5rem;
 }
-
-.containers .body .reviews .image img {
+.containers .body .reviews .a .image img {
   width: 100%;
   display: block;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   position: relative;
-  -webkit-box-shadow: 10px -10px 5px 0px rgba(0, 0, 0, 0.8);
-          box-shadow: 10px -10px 5px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 10px -10px 5px 0px rgba(0, 0, 0, 0.8);
 }
-
-.containers .body .reviews .image svg {
+.containers .body .reviews .a .image svg {
   position: absolute;
-  top: 0;
+  top: -21px;
   left: 0;
   font-size: 30px;
   margin-top: 40px;
 }
-
-.containers .body .reviews .content .name {
+.containers .body .reviews .a .content .name {
   margin-bottom: 0.25rem;
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 19px;
 }
-
-.containers .body .reviews .content .job {
+.containers .body .reviews .a .content .job {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   font-size: 0.85rem;
   color: #22b7dd;
   font-size: 14px;
 }
-
-.containers .body .reviews .content .text {
+.containers .body .reviews .a .content .text {
   margin-bottom: 0.75rem;
 }
-
 .containers .body .icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 .containers .body .icon svg {
   font-size: 30px;
 }
-
 .containers .body .icon svg:hover {
   color: #22b7dd;
 }
 
 .activeSlide {
   opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .lastSlide {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  opacity: 0;
+  transform: translateX(-130%);
 }
 
 .nextSlide {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  opacity: 0;
+  transform: translateX(130%);
 }
+
 /*# sourceMappingURL=style.css.map */

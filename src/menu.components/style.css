@@ -1,0 +1,59 @@
+.header {
+  margin-top: 60px;
+}
+.header .underline {
+  width: 70px;
+  height: 5px;
+  background-color: #e65a3b;
+  margin: 0 auto;
+}
+
+.food {
+  width: 520px;
+  height: 180px;
+  margin: 15px;
+  display: flex;
+}
+.food img {
+  width: 185px;
+  height: 170px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.food .content .tit {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  margin-bottom: 33px;
+  padding: 15px 10px 0 10px;
+}
+.food .content .tit h4 {
+  text-transform: capitalize;
+}
+.food .content .tit p {
+  font-size: 17px;
+  color: #e65a3b;
+  font-weight: 800;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  margin: 40px auto;
+}
+.buttons button {
+  border-style: none;
+  color: #e65a3b;
+  background-color: #fff;
+}
+.buttons button:focus {
+  opacity: 0.8;
+  border-bottom: 1px solid #e65a3b;
+}
+.buttons button p {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=style.css.map */

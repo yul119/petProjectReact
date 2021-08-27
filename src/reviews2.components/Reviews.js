@@ -6,7 +6,7 @@ import { VscArrowLeft } from "react-icons/vsc";
 import { VscArrowRight } from "react-icons/vsc";
 
 const Reviews = () => {
-    const [index, setIndex]= useState(3)
+    const [index, setIndex]= useState(0)
 
     const changeNum= (num) =>{
         if(num<0){
@@ -35,30 +35,32 @@ const Reviews = () => {
             </div>
             <div className='body'>
                 <div className='icon'><VscArrowLeft onClick={prev}/></div>
-                {
-                    people.map((person,i)=>{
-                        let position = 'lastSlide'
-                        if(i==index){
-                            position = 'activeSlide'
-                        }
-                        if(i==index+1||(i==people.length-1 && index==0)){
-                            position = 'nextSlide'
-                        }
-                        const classname = `reviews ${position}`
+                <div className='reviews'>
+                    {
+                        people.map((person,i)=>{
+                            let posi = 'lastSlide'
+                            if(i===index) posi = 'activeSlide'
+                            if(i===index+1||(index===people.length-1 && i===0)){
+                                posi = 'nextSlide'
+                            }
 
-                        return  (<div className={classname} >
-                            <div className='image'>
-                                <img src={person.image} alt={person.name} />
-                                <FaQuoteRight />
-                            </div>
-                            <div className='content'>
-                                <p className='name'>{person.name}</p>
-                                <p className='job'>{person.job}</p>
-                                <p className='text'>{person.text}</p>
-                            </div>
-                        </div>)
-                    })
-                }
+                            const cn = `a ${posi}`
+
+                            return  (<div className={cn}>
+                                <div className='image'>
+                                    <img src={person.image} alt={person.name} />
+                                    <FaQuoteRight />
+                                </div>
+                                <div className='content'>
+                                    <p className='name'>{person.name}</p>
+                                    <p className='job'>{person.job}</p>
+                                    <p className='text'>{person.text}</p>
+                                </div>
+                            </div>)
+                        })
+                    }
+                </div>
+
                 <div className='icon'><VscArrowRight onClick={next}/></div>
                 
             </div>
