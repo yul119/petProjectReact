@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ecfaf1;
+}
+
+form {
+  margin: 50px auto;
+}
+
+.color {
+  transition: all 0.3s ease-in-out;
+}
+.color:hover {
+  transform: scale(1.1);
+}
+.color:focus {
+  transform: scale(1);
+}
+
+/*# sourceMappingURL=style.css.map */

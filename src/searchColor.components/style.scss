@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #ecfaf1;
+}
+form{
+    margin: 50px auto;
+}
+.color{
+    transition: all .3s ease-in-out; 
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:focus{
+        transform: scale(1);
+    }
+}
