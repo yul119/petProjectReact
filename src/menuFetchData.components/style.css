@@ -1,0 +1,68 @@
+.header {
+  margin: 60px auto 0 auto;
+}
+.header .underline {
+  width: 90px;
+  height: 5px;
+  background-color: #3db2b0;
+  margin: 0px auto 40px auto;
+}
+
+.buttons {
+  height: 350px;
+}
+.buttons .comBtn {
+  display: list-item;
+  border-style: none;
+  background-color: #fff;
+  font-size: 20px;
+  padding-left: 40px;
+}
+.buttons .comBtn:focus, .buttons .comBtn:hover {
+  border-left: 1px solid #3db2b0;
+  color: #3db2b0;
+}
+.buttons .activeBtn {
+  border-left: 1px solid #3db2b0;
+  color: #3db2b0;
+}
+
+.content {
+  height: 350px;
+}
+.content h3 {
+  text-align: left;
+}
+.content h5 {
+  text-align: left;
+  color: #3db2b0;
+}
+.content p {
+  text-align: left;
+  opacity: 0.8;
+}
+.content .duties {
+  display: flex;
+}
+.content .duties svg {
+  align-self: center;
+  font-size: 30px;
+  color: #3db2b0;
+}
+.content .duties p {
+  padding: 8px 8px 0 8px;
+  line-height: 1.2;
+}
+
+.infoBtn {
+  color: #fff;
+  background-color: #3db2b0;
+  border-style: none;
+  margin: 40px auto;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-right: 290px;
+}
+
+/*# sourceMappingURL=style.css.map */
