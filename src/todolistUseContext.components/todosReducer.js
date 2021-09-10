@@ -18,7 +18,7 @@ export const TodosReducer = (state, action) => {
         case 'update':
             return state.map(todo=>{
                 if(todo.id === payload.id){
-                    todo = {id: payload.id, text: payload.newText}
+                    return {...todo, text: payload.newText}
                 }
                 return todo
             })

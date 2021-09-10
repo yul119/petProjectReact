@@ -1,0 +1,67 @@
+h1 {
+  color: aliceblue;
+}
+
+.flex {
+  display: flex;
+  background-color: black;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div {
+  position: relative;
+}
+div .icon {
+  height: 32px;
+  width: 32px;
+}
+div .count {
+  text-align: center;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 20px;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-left: 30%;
+}
+
+.cartItem {
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  align-items: center;
+}
+.cartItem img {
+  height: 128px;
+  width: 128px;
+}
+.cartItem .content {
+  width: 50%;
+}
+.cartItem .amount {
+  flex-grow: 1;
+  margin-right: 30px;
+}
+.cartItem .amount p {
+  margin: 0;
+  margin-top: 5px;
+}
+.cartItem .amount button {
+  border: none;
+  background-color: #fff;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
