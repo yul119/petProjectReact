@@ -1,6 +1,9 @@
 import React from 'react'
+import { useGlobalCartContext } from './context'
 
 const CartItem = ({id, title, price, img, amount}) => {
+    const {deleteItem, up, down} = useGlobalCartContext()
+
     return (
         <div className='cartItem'>
             <img src={img} alt={title}></img>
@@ -9,11 +12,11 @@ const CartItem = ({id, title, price, img, amount}) => {
                 <p>{price}$</p>
             </div>
             <div className='amount'>
-                <button>+</button>
+                <button onClick={()=>up(id)}>+</button>
                 <p>{amount}</p>
-                <button>-</button>
+                <button onClick={()=>down(id)}>-</button>
             </div>
-            <div>Remove</div>
+            <div onClick={()=>deleteItem(id)}>Remove</div>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 h1{
-    color: aliceblue;
+    color: white;
 }
 .flex{
     display: flex;
@@ -7,6 +7,8 @@ h1{
     height: 80px;
     justify-content: space-around;
     align-items: center;
+    width: 70%;
+    margin-left: 15%;
 }
 div{
     position: relative;
@@ -59,4 +61,12 @@ div{
             font-size: 25px;
         }
     }
+}
+
+.deleteAll{
+    display: inline-block;
+    padding: 10px 20px;
+    color: red;
+    border: 1px solid red;
+    margin: 50px;
 }

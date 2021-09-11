@@ -1,5 +1,5 @@
 h1 {
-  color: aliceblue;
+  color: white;
 }
 
 .flex {
@@ -8,6 +8,8 @@ h1 {
   height: 80px;
   justify-content: space-around;
   align-items: center;
+  width: 70%;
+  margin-left: 15%;
 }
 
 div {
@@ -62,6 +64,14 @@ div .count {
   border: none;
   background-color: #fff;
   font-size: 25px;
+}
+
+.deleteAll {
+  display: inline-block;
+  padding: 10px 20px;
+  color: red;
+  border: 1px solid red;
+  margin: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
